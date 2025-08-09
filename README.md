@@ -1,7 +1,7 @@
 ## Step 1. Create a vllm-enabled workstation
 
 To run a 32B model, use a compute pool with a 4 GPU instance, such as `g5.12xlarge` on AWS.
-Noitce a few things:
+Notice a few things:
 1. The setting for shared memory is 10GB, the default is insufficient IPC across GPU cards with vLLM.
 2. Use an image that has Nvidia GPU drivers installed. This repository contains an [example image](./Dockerfile) that pre-installs vllm, PyTorch, and other dependencies. A public image is hosted at `docker.io/eddieob/vllm-flashinfer-metaflow` for demo purposes. 
 
